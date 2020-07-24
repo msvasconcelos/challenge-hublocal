@@ -1,6 +1,6 @@
 # Migrations
-    Users
-    Task
+    Users ok
+    Task ok
 
 # rotas
  - USERS
@@ -12,10 +12,10 @@
     * LIst
     * Delete
 
- - AUTHENTICATE
+ - Sessions
   * Create
 
- # Entities
-    User
-    Task
+ # Models
+    User ok
+    Task ok
 
