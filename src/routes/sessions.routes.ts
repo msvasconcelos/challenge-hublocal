@@ -1,12 +1,12 @@
 import { Router } from 'express';
-import AuthenticateUserService from '../services/AuthenticateUserService';
+import AuthenticatesUserService from '../services/AuthenticateUserService';
 
 const sessionsRouter = Router();
 
 sessionsRouter.post('/', async (request, response) => {
   const { email, senha } = request.body;
 
-  const authenticateUser = new AuthenticateUserService();
+  const authenticateUser = new AuthenticatesUserService();
 
   const { user, token } = await authenticateUser.execute({
     email,

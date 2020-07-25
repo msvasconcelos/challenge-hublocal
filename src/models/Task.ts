@@ -29,7 +29,7 @@ export default class Task {
   description: string;
 
   @Column()
-  status: string;
+  status: 'not_done' | 'in_progress' | 'done';
 
   @CreateDateColumn()
   created_at: Date;
